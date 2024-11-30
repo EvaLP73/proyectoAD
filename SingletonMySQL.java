@@ -9,7 +9,7 @@ public class SingletonMySQL{
     static Connection connection;
     private final String usuario = "root";
     private final String clave = "abc123.";
-    private final String url ="jdbc:mysql://localhost:3306/ventasMySQL?serverTimezone=UTC";
+    private final String url ="jdbc:mysql://localhost:3306/ventasMySQL";
 
     // El constructor del singleton siempre debe ser privado para evitar llamadas de construcción directas con el operador `new`.
     private SingletonMySQL(){
