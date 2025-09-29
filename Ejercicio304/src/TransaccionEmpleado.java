@@ -22,15 +22,18 @@ public class TransaccionEmpleado {
 
             conn.setAutoCommit(false);
 
-            ps.setInt(1, 6);
+            ps.setInt(1, 7);
             ps.setString(2, "Amancio");
             ps.setInt(3, 1);
             ps.executeUpdate();
 
-            ps.setInt(1, 5);
+            ps.setInt(1, 8);
             ps.setString(2, "Lucas");
             ps.executeUpdate();
 
+            ps.setInt(1, 9);
+            ps.setString(2, "Daniel");
+            ps.executeUpdate();
 
 
             conn.commit();
